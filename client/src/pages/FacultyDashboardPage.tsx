@@ -147,7 +147,7 @@ const FacultyDashboardPage: React.FC = () => {
             setReviewSubmissions(result.submissions || []);
             if (result.submissions?.length > 0) {
                 setReviewModal({ assignmentId: assignment._id, submission: result.submissions[0] });
-                setReviewForm({ grade: '', feedback: '' });
+                setReviewForms({ grade: '', feedback: '' });
                 setReviewMsg('');
             }
         } catch { /* ignore */ }
